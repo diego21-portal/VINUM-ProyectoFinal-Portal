@@ -3,11 +3,6 @@
 
 VINUM es una aplicación **E-commerce desarrollada con React** que simula una tienda online de vinos y champagnes premium.  
 El proyecto implementa un **flujo de compra completo**, con control real de stock, persistencia de datos en Firebase y una interfaz moderna, responsive y orientada a una experiencia de usuario profesional.
-# 🍷 VINUM – E-commerce de Vinos & Champagnes  
-### Proyecto Final – React | CODERHOUSE
-
-VINUM es una aplicación **E-commerce desarrollada con React** que simula una tienda online de vinos y champagnes premium.  
-El proyecto implementa un **flujo de compra completo**, con control real de stock, persistencia de datos en Firebase y una interfaz moderna, responsive y orientada a una experiencia de usuario profesional.
 
 ---
 
