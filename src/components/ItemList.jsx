@@ -1,5 +1,5 @@
 import { Grid } from "@mui/material"
-import Item from "./Item"
+import Item from "./Item.jsx"
 
 export default function ItemList({ products }) {
   return (

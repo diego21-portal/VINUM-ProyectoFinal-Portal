@@ -8,7 +8,7 @@ import {
 } from "@mui/material"
 import ItemCount from "./ItemCount"
 import { useContext, useState } from "react"
-import { CartContext } from "../context/CartContext"
+import { CartContext } from "../context/CartContext.js"
 
 
 export default function ItemDetail({ product }) {

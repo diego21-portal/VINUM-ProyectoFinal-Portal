@@ -1,6 +1,6 @@
 import { useContext } from "react"
-import { CartContext } from "../context/CartContext"
-import CartItem from "../components/CartItem"
+import { CartContext } from "../context/CartContext.js"
+import CartItem from "../components/CartItem.jsx"
 import { Button, Typography, Box, Divider } from "@mui/material"
 import { Link } from "react-router-dom"
 

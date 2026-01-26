@@ -1,16 +1,16 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
-import { CartProvider } from "./context/CartProvider"
-import PageTransition from "./components/PageTransition"
+import { CartProvider } from "./context/CartProvider.jsx"
+import PageTransition from "./components/PageTransition.jsx"
 
-import NavBar from "./components/NavBar"
-import Footer from "./components/Footer"
+import NavBar from "./components/NavBar.jsx"
+import Footer from "./components/Footer.jsx"
 
-import Landing from "./pages/Landing"
-import ItemListContainer from "./containers/ItemListContainer"
-import ItemDetailContainer from "./containers/ItemDetailContainer"
-import Cart from "./containers/Cart"
-import CheckoutForm from "./components/CheckoutForm"
-import PageLayout from "./components/PageLayout"
+import Landing from "./pages/Landing.jsx"
+import ItemListContainer from "./containers/ItemListContainer.jsx"
+import ItemDetailContainer from "./containers/ItemDetailContainer.jsx"
+import Cart from "./containers/Cart.jsx"
+import CheckoutForm from "./components/CheckoutForm.jsx"
+import PageLayout from "./components/PageLayout.jsx"
 
 function App() {
   return (

@@ -1,5 +1,5 @@
 import { useContext } from "react"
-import { CartContext } from "../context/CartContext"
+import { CartContext } from "../context/CartContext.js"
 import { Box, Typography, Button } from "@mui/material"
 
 export default function CartItem({ item }) {

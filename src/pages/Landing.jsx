@@ -1,6 +1,6 @@
 import { Box, Typography, Button } from "@mui/material"
 import { useNavigate } from "react-router-dom"
-import PageTransition from "../components/PageTransition"
+import PageTransition from "../components/PageTransition.jsx"
 
 export default function Landing() {
   const navigate = useNavigate()

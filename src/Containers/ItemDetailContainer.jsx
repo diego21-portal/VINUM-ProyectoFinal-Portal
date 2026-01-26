@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
 import { doc, getDoc } from "firebase/firestore"
-import { db } from "../services/firebase"
-import ItemDetail from "../components/ItemDetail"
+import { db } from "../services/firebase.js"
+import ItemDetail from "../components/ItemDetail.jsx"
 import { CircularProgress, Box, Typography } from "@mui/material"
 
 export default function ItemDetailContainer() {

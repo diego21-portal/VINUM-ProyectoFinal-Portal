@@ -1,6 +1,6 @@
 import { useContext, useState } from "react"
-import { CartContext } from "../context/CartContext"
-import { createOrder } from "../services/orders"
+import { CartContext } from "../context/CartContext.js"
+import { createOrder } from "../services/orders.js"
 import { TextField, Button, Typography, Box } from "@mui/material"
 
 export default function CheckoutForm() {

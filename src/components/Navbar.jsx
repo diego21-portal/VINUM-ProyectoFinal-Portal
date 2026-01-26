@@ -1,6 +1,6 @@
 import { AppBar, Toolbar, Typography, Button, Box } from "@mui/material"
 import { Link } from "react-router-dom"
-import CartWidget from "./CartWidget"
+import CartWidget from "./CartWidget.jsx"
 
 export default function NavBar() {
   return (

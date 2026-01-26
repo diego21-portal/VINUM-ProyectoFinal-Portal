@@ -4,7 +4,7 @@ import {
   runTransaction,
   serverTimestamp
 } from "firebase/firestore"
-import { db } from "./firebase"
+import { db } from "./firebase.js"
 
 export async function createOrder(cart, buyer, total) {
   const orderRef = doc(collection(db, "orders"))
