@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 import { CartProvider } from "./context/CartProvider.jsx"
 import PageTransition from "./components/PageTransition.jsx"
 
-import NavBar from "./components/NavBar.jsx"
+import Navbar from "./components/Navbar.jsx"
 import Footer from "./components/Footer.jsx"
 
 import Landing from "./pages/Landing.jsx"
@@ -26,7 +26,7 @@ function App() {
             path="/shop"
             element={
               <PageTransition>
-                <NavBar />
+                <Navbar />
                 <PageLayout>
                   <ItemListContainer />
                 </PageLayout>
@@ -39,7 +39,7 @@ function App() {
             path="/category/:categoryId"
             element={
               <>
-                <NavBar />
+                <Navbar />
                 <PageLayout>
                   <ItemListContainer />
                 </PageLayout>
@@ -52,7 +52,7 @@ function App() {
             path="/item/:itemId"
             element={
               <>
-                <NavBar />
+                <Navbar />
                 <PageLayout>
                 <ItemDetailContainer />
                 </PageLayout>
@@ -65,7 +65,7 @@ function App() {
             path="/cart"
             element={
               <>
-                <NavBar />
+                <Navbar />
                 <PageLayout>
                   <Cart />
                 </PageLayout>
@@ -78,7 +78,7 @@ function App() {
             path="/checkout"
             element={
               <>
-                <NavBar />
+                <Navbar />
                 <PageLayout>
                   <CheckoutForm />
                 </PageLayout>

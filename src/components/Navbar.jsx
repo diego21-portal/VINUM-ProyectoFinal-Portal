@@ -2,7 +2,7 @@ import { AppBar, Toolbar, Typography, Button, Box } from "@mui/material"
 import { Link } from "react-router-dom"
 import CartWidget from "./CartWidget.jsx"
 
-export default function NavBar() {
+export default function Navbar() {
   return (
     <AppBar position="static" color="secondary">
       <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
