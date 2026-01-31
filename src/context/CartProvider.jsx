@@ -37,6 +37,13 @@ export function CartProvider({ children }) {
     setCart(prev => prev.filter(p => p.id !== id))
   }
 
+  const updateQuantity = (id, sumquantity) => {
+    setCart(cart =>
+      cart.map(item =>
+                item.id === id
+                ? { ...item, quantity: item.quantity + sumquantity } : item).filter(item => item.quantity > 0))
+  }
+
   const clearCart = () => setCart([])
 
   const total = cart.reduce((acc, p) => acc + p.price * p.quantity, 0)
@@ -47,6 +54,7 @@ export function CartProvider({ children }) {
       value={{
         cart,
         addItem,
+        updateQuantity,
         removeItem,
         clearCart,
         total,

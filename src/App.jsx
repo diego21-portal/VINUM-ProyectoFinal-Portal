@@ -1,5 +1,4 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
-import { CartProvider } from "./context/CartProvider.jsx"
 import PageTransition from "./components/PageTransition.jsx"
 
 import Navbar from "./components/Navbar.jsx"
@@ -11,10 +10,12 @@ import ItemDetailContainer from "./containers/ItemDetailContainer.jsx"
 import Cart from "./containers/Cart.jsx"
 import CheckoutForm from "./components/CheckoutForm.jsx"
 import PageLayout from "./components/PageLayout.jsx"
+import Login from "./pages/Login.jsx"
+import Register from "./pages/Register.jsx"
+import Profile from "./pages/Profile.jsx"
 
 function App() {
   return (
-    <CartProvider>
       <BrowserRouter>
 
         <Routes>
@@ -86,11 +87,49 @@ function App() {
               </>
             }
           />
+          
+          <Route
+            path="/login"
+            element={
+              <>
+                <Navbar />
+                <PageLayout>
+                  <Login />
+                </PageLayout>
+                <Footer />
+              </>
+            }
+          />
+
+          <Route
+            path="/register"
+            element={
+              <>
+                <Navbar />
+                <PageLayout>
+                  <Register />
+                </PageLayout>
+                <Footer />
+              </>
+            }
+          />
+
+          <Route
+            path="/profile"
+            element={
+              <>
+                <Navbar />
+                <PageLayout>
+                  <Profile />
+                </PageLayout>
+                <Footer />
+              </>
+            }
+          />
         </Routes>
 
       </BrowserRouter>
-    </CartProvider>
-  )
+    )
 }
 
 export default App

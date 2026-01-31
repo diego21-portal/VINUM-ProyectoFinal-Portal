@@ -25,6 +25,7 @@ export default function Item({ product }) {
       <Box
         sx={{
           height: 260,
+          width: "100%",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
@@ -37,7 +38,9 @@ export default function Item({ product }) {
           image={product.image}
           alt={product.name}
           sx={{
+            
             maxHeight: "100%",
+            minWidth: 300,
             maxWidth: "100%",
             objectFit: "contain"
           }}
